@@ -13,8 +13,21 @@
                 </strong>
             </p>
         </div>
-        <div class="kontakt-info">
+        <div class="kontakt-form">
+            <div><h3>Kontaktinofrmationen:</h3></div>
 
+            <div class="kontakt-info">
+                <strong><span>Sirius</span>  Pflegedienst GmbH <br>
+                Geschäftsführer: ##### <br>
+                Schleussnerstr. 90 <br>
+                63263 Neu Isenburg</strong>
+                <br>
+                <br>
+                <strong>
+                    Telefon: <span>06102-815-3335</span><br> 
+                    Fax: <span>06102-815-3336</span> 
+                </strong>
+            </div>
         </div>
 
     </div>
@@ -55,13 +68,30 @@ export default {
     margin-top: 13%;
     color: rgb(70,130,180);
 }
-.kontakt-info{
+.info-text{
+    font-family: verdana;
+    font-size: 18px;
+    color: grey;
+}
+.kontakt-form{
     margin-left: 25%;
     margin-top: 12%;
     height: 30em;
     width: 30em;
-    border: 1px solid black;
-    background-color: rgb(70,130,180);
+    border: 1px solid grey;
+    box-shadow: 10px 5px 5px grey;
+}
+.kontakt-form h3{
+    text-align: center;
+    color: rgb(70,130,180);
+}
+.kontakt-info{
+    margin-left: 3%;
+    margin-top: 10%;
+    color: grey;
+}
+span{
+    color: rgb(70,130,180);
 }
 
 </style>

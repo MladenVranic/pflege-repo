@@ -78,7 +78,7 @@ export default {
     color: rgb(70,130,180);
 }
 .kontakt-info{
-    margin-block-start: 2em;
+    color: grey;
 }
 p{
     font-family: verdana;
