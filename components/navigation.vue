@@ -58,10 +58,6 @@ export default {
 </script>
 
 <style scoped>
- 
-
-
-
 #logo {
   cursor: pointer;
   width: 70%;
