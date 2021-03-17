@@ -12,12 +12,10 @@
         </div>
         <!--Links-->
         <div class="nav-list">
-          <a href="#" v-on:click="comp = 'start'" @click="test">Startseite</a>
-          <a href="#" v-on:click="comp = 'pflege'" @click="test"
-            >Pflegedienst</a
-          >
-          <a>Kontakt</a>
-          <a href="#" v-on:click="comp = 'impr'" @click="test">Impressum</a>
+          <a href="#" v-on:click="comp = 'start'" >Startseite</a>
+          <a href="#" v-on:click="comp= 'pflege'">Pflegedienst</a>
+          <a href="#" v-on:click="comp = 'kontakt'">Kontakt</a>
+          <a href="#" v-on:click="comp = 'impr'">Impressum</a>
         </div>
       </nav>
     </div>
@@ -30,6 +28,8 @@
 import pflegedienst from "./pflegedienst.vue";
 import startseite from "./startseite.vue";
 import impressum from "./impressum.vue";
+import kontakt from "./kontakt.vue";
+
 //import Vue from'vue';
 
 //define export object for navigation menue
@@ -39,6 +39,7 @@ export default {
     pflege: pflegedienst,
     start: startseite,
     impr: impressum,
+    kontakt,
   },
 
   name: "header",
@@ -48,17 +49,22 @@ export default {
       comp: "start",
       method: {
         test: function () {
-          window.scrollTo(0, 0);
-        },
-      },
-    };
-  },
-};
+          window.onload.scrollTo(0,0);
+        }
+      }
+    }
+  }
+}
 </script>
 
 <style scoped>
+ 
+
+
+
 #logo {
   cursor: pointer;
+  width: 70%;
 }
 
 .header {
@@ -91,6 +97,7 @@ a {
   padding-bottom: 15px;
 }
 /*Link Container Flex box*/
+
 .nav-list {
   display: flex;
   justify-content: space-around;
