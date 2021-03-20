@@ -8,7 +8,7 @@
             <h2>Angaben gemäß §5 TMG</h2>
 
             <p>
-               <span>Sirius</span> Pflegedienst GmbH
+                Sirius Pflegedienst GmbH
                 <br>
                 Schleussnerstr. 90
                 <br>
@@ -24,7 +24,7 @@
             <p>
                 <strong>Vertereten durch die Geschäftsführer:</strong>
                 <br>
-                Zorica Stankovic
+                Dalibor Stankovic
             </p>
             <br>
             <h2>Kontakt</h2>

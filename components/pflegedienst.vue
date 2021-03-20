@@ -25,8 +25,6 @@
                 </strong>
             </p>
         </div>
-
-
     </div>
 </template>
 
@@ -71,8 +69,8 @@ export default {
 /*Seiteninhalt*/
 .text{
     font-family: verdana;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 16px;
     outline-color: initial;
     color: grey;
     text-align: left;

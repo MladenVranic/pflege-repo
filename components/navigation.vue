@@ -8,7 +8,8 @@
       <!--phone number!-->
       <nav class="right-side">
         <div class="phone-number">
-          <h2>06102-815-3335</h2>
+          <div class="phone-img"><img src="../assets/phoneIcon.png" alt=""></div>
+          <div><h2>06102-815-3335</h2></div>
         </div>
         <!--Links-->
         <div class="nav-list">
@@ -78,7 +79,11 @@ export default {
 }
 
 .phone-number {
+  display:flex;
   color: rgb(70, 130, 180);
+}
+.phone-img{
+  padding: 3px;
 }
 /*Link font decoration*/
 a {
@@ -87,7 +92,7 @@ a {
   text-align: center;
   font-family: verdana;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   color: grey;
   cursor: pointer;
   padding-bottom: 15px;

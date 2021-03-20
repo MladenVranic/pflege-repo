@@ -5,6 +5,10 @@
     <navigation/>
     <footerPflege/>
 
+    <div class="backToTop-btn">
+      <a href="#" class="backBTN" id="backToTop"></a>
+    </div>
+
 
   </div>
 </template>
@@ -32,12 +36,13 @@ export default {
   
   data(){
     return{
-      user:{
-       
+      
+          };
+        },
+        methods:{
+          
+        }
       }
-    }
-  }
-}
 
 </script>
 
@@ -59,5 +64,25 @@ body{
   color: #2c3e50;
   display: flex;
   flex-direction: column;
+}
+.backBTN{
+  display: inline;
+  width: 30px;
+  height: 30px;
+  padding: 25px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999999999999999999999999999999;
+  background:  rgb(70,130,180);
+  border: 1px solid rgb(70,130,180);
+  border-radius: 100px;
+  box-shadow: 0 0 9px 1px rgb(0 0 0 / 40%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  transform: rotate(-90deg);
+  visibility: hidden;
+  
 }
 </style>

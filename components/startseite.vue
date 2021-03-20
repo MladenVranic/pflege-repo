@@ -33,7 +33,8 @@
         <br>
         <br>
         <div class="grundpflege">
-            <h2>Folgende Pflegerische Leistungen zählen zur Grundpflege:</h2>
+            <div><img src="../assets/grundpflegeIcon.png" alt=""></div>
+            <div><h2>Folgende pflegerische Leistungen zählen zur Grundpflege:</h2></div>
         </div>
         <br>
         <div class="grundpflege-text">
@@ -44,6 +45,55 @@
                     <li><span>Hilfe beim Essen und Trinken</span></li>
                     <li><span>Bewegungshilfe</span></li>
                     <li><span>Hauswirtschaftliche Aufgaben</span></li>
+                </strong>
+            </p>
+            <br>
+            <p>
+                <strong>
+                    Natürlich fällt auch die <span>Vorsorge</span> in die Grundpflege.
+                    Durch die <span>Vorsorge</span> werden Einschränkungen wie Erkältung,
+                    Versteifung und weitere Beschwerden vermieden. Um eine sorgfältige
+                    Vorsorge durchzuführen, kümmern wir uns um jegliche negative Einflüsse
+                    unserer Patienten und beseitigen diese.
+                </strong>
+            </p>
+        </div>
+        <br>
+        <div class="intensiv-pflege">
+            <div><img src="../assets/intensivIcon.png" alt=""></div>
+            <div><h2>Intensivpflege:</h2></div>
+        </div>
+        <br>
+        <div class="intensivpflege-text">
+            <p>
+                <strong>
+                    Die Intensivpflege ist ein wesentlicher Bestandteil unserer Leistungen.
+                    Ambulante Intensivpflege bezeichnet die Behandlung pflegebedürftiger Menschen
+                    mit lebensbedrohlicher Erkrankungen außerhalb der Klinik.
+                    Sie tritt in kraft, wenn eine stationäre klinische Behandlung und 
+                    medizinischer Versorgung nicht mehr erforderlich ist. Folgende Leistungen
+                    bieten wir für die Intensivpflege an:
+                </strong>
+            </p>
+            <br>
+            <p>
+                <strong>
+                    <li><span>Überwachung & Vitalisierung</span></li>
+                    <li><span>Lagerungsbehandlungen & Mobilisation</span></li>
+                </strong>
+            </p>
+        </div>
+        <br>
+        <div class="service-leistungen">
+            <div><img src="../assets/serviceIcon.png" alt=""></div>
+            <div><h2>Folgende Serviceleistungen stehen Ihnen zur Auswahl:</h2></div>
+        </div>
+        <div class="service-text">
+            <p>
+                <strong>
+                    Zu unseren Servieleistungen gehört unter anderem die <span> häusliche
+                    Krankenpflege nach §37 SGB V  </span> als Leistung der gesetzlichen Krankenversicherung,
+                    welche die <span>Medikamentengabe</span>, den <span>Verbandswechsel</span>  und <span>Injektionen</span> beinhaltet.
                 </strong>
             </p>
         </div>
@@ -77,41 +127,67 @@ export default {
 #startseite{
     /*calling slide animation for this section*/
     animation: 1s ease-out 0s 1 slide;
-    height: 50em;
     margin-left: 10%;
     margin-top: 13%;
     margin-right: 10%;
+    margin-bottom: 10%;
 }
 /*Überschrift*/
 .titel{
-    
     color: rgb(70,130,180);
-    
 }
 /*Paragraph text*/
 .intro-text{
     font-family: verdana;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     outline-color: initial;
     color: grey;
     text-align: left;
     margin-top: 5%;
     
 }
+.grundpflege{
+    display: flex;
+    color: rgb(70,130,180);
+    
+}
+img{
+    margin-top: 1em;
+    padding: 3px;
+}
+
 .grundpflege-text{
     font-family: verdana;
-    font-weight: 600;
-    font-size: 18px;
-    outline-color: 18px;
+    font-weight: 500;
+    font-size: 16px;
+    color:grey;
 
 }
-.grundpflege{
-    
-    color: rgb(70,130,180);
-}
+
 span{
     color: rgb(70,130,180);
+}
+.intensiv-pflege{
+    display:flex;
+    color: rgb(70,130,180);
+}
+.intensivpflege-text{
+    font-family: verdana;
+    font-weight: 500;
+    font-size: 16px;
+    color:grey;
+}
+
+.service-leistungen{
+    display:flex;
+    color: rgb(70,130,180);
+}
+.service-text{
+    font-family: verdana;
+    font-weight: 500;
+    font-size: 16px;
+    color:grey;
 }
 
 

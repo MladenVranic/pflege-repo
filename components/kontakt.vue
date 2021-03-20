@@ -2,7 +2,7 @@
     <div id="kontakt">
 
         <div class="titel">
-            <h1>Sie haben noch Fragen? Kontaktieren Sie uns jeder Zeit</h1>
+            <h1>Sie haben noch Fragen? Kontaktieren Sie uns jeder Zeit</h1> 
         </div>
 
         <div class="info-text">
@@ -17,15 +17,16 @@
             <div><h3>Kontaktinofrmationen:</h3></div>
 
             <div class="kontakt-info">
-                <strong><span>Sirius</span>  Pflegedienst GmbH <br>
-                Geschäftsführer: ##### <br>
+                <strong>Sirius Pflegedienst GmbH <br>
+                Geschäftsführer: <span> Zorica Stankovic </span><br>
                 Schleussnerstr. 90 <br>
                 63263 Neu Isenburg</strong>
                 <br>
                 <br>
                 <strong>
                     Telefon: <span>06102-815-3335</span><br> 
-                    Fax: <span>06102-815-3336</span> 
+                    Fax: <span>06102-815-3336</span><br>
+                    E-Mail: <span>########</span><br>
                 </strong>
             </div>
         </div>
@@ -70,7 +71,7 @@ export default {
 }
 .info-text{
     font-family: verdana;
-    font-size: 18px;
+    font-size: 16px;
     color: grey;
 }
 .kontakt-form{
@@ -86,6 +87,8 @@ export default {
     color: rgb(70,130,180);
 }
 .kontakt-info{
+    font-family: verdana;
+    font-weight: 15px;
     margin-left: 3%;
     margin-top: 10%;
     color: grey;

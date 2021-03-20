@@ -11,7 +11,7 @@
                         <p>
                             <strong>Sirius Pflegedienst GmbH</strong>
                             <br>
-                            <strong>Geschäftsführer: #####</strong>
+                            <strong>Geschäftsführer: Dalibor Stankovic</strong>
                             <br>
                             <strong>Schleussnerstr. 90</strong>
                             <br>                     
@@ -24,7 +24,13 @@
                             <strong>Tel: 06102 815 3335</strong>
                             <br>
                             <strong>Fax: 06102 815 3336</strong>
+                            <br>
+                            <strong>E-Mail: ######</strong>
                         </p>
+                    </div>
+                    <div class="links">
+                        <a href="#">Kontakt</a> |
+                        <a href="#">Impressum</a>
                     </div>
             </div>
         </div>
@@ -37,8 +43,16 @@
 </template>
 
 <script>
+/*
+import kontakt from './kontakt.vue'
+import impressum from './impressum.vue'
+import startseite from './startseite.vue'
+*/
+
 //define export object for footer
 export default {
+    //call components
+    
     name: 'footer-pflege',
     data(){
         return{
@@ -82,6 +96,11 @@ export default {
     left: 0;
     padding-top: 20px;
     width:100%;
+}
+ a{
+    text-decoration: none;
+    cursor: pointer;
+    color: grey;
 }
 
 </style>
