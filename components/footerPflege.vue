@@ -1,6 +1,8 @@
 <template>
+
     <div id="footer-pflege">
 <!--Footer start!-->
+
         <div class="footer">
 <!--Footer-contact-information section!-->
                 <div class="footer-section-contact">
@@ -28,40 +30,52 @@
                             <strong>E-Mail: ######</strong>
                         </p>
                     </div>
-                    <div class="links">
-                        <a href="#">Kontakt</a> |
-                        <a href="#">Impressum</a>
+                 </div>
+            <div class="footer-section-logos">
+                <div class="bpa">
+                    <div class="logo-bpa">
+                        <img src="../assets/bpa.png" alt="">
                     </div>
-            </div>
+                    <div class="text-bpa">
+                        <p>
+                            <strong>
+                                Mitglied im bpa – Bundesverband <br> 
+                                privater Anbieter sozialer Dienste e.V.
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+        </div>
         </div>
 <!--Footer-bottom-copyright!-->
         <div class="footer-bottom">
             &copy; Sirius Pflegedienst GmbH 2021
         </div>
-
     </div>
 </template>
 
 <script>
+//import navigation from './navigation.vue'
 /*
-import kontakt from './kontakt.vue'
 import impressum from './impressum.vue'
-import startseite from './startseite.vue'
 */
+
+
 
 //define export object for footer
 export default {
-    //call components
-    
+    //call component
+
     name: 'footer-pflege',
     data(){
         return{
             user:{
-
+              
+              }
             }
         }
     }
-}
+
 </script>
 
 <style scoped>
@@ -70,26 +84,31 @@ export default {
     width: 100%;
     left: 0;
     bottom: 0;
+
 }
 .footer {
-    background: #303036;
+    background: grey;
     color: #d3d3d3;
     height: 400px;
     position: relative;
     bottom: 0;
+    display:flex;
+    flex-wrap:wrap;
     
     
 }
 .footer-section-contact{
+    color: white;
     padding: 60px;
     text-align: left;
+    line-height: 25px;
 }
 .phone-contact{
     margin-top: 20px;
 }
 .footer-bottom{
-    background: #343a40;
-    color: #686868;
+    background-color: #777;
+    color: white;
     height: 50px;
     text-align: center;
     bottom: 0;
@@ -97,10 +116,18 @@ export default {
     padding-top: 20px;
     width:100%;
 }
- a{
-    text-decoration: none;
-    cursor: pointer;
-    color: grey;
+.footer-section-logos{
+    margin-left: 15%;
 }
+.bpa{
+    display: flex;
+    margin-top: 15%;
+    
+}
+.text-bpa{
+    color:white;
+    margin-left: 3em;
+}
+
 
 </style>

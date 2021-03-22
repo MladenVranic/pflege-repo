@@ -56,10 +56,10 @@ export default {
 #service{
     /*calling slide animation for this section*/
     animation: 1s ease-out 0s 1 slide;
-    height: 50em;
     margin-left:  10%;
     margin-right: 10%;
     margin-top: 13%;
+    margin-bottom: 25%;
 }
 
 .titel{

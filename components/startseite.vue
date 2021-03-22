@@ -1,12 +1,13 @@
 <template>
     <div id="startseite">
 
-        <div class="titel">
+        <div class="titel" v-scrollanimation>
         <h1>Sirius Pflegedienst - Ihr Pflegedienst in Frankfurt und Umgebung</h1>
         </div>
 
         <div class="intro-text">
-            <p><strong>
+            <div class="txt">
+            <p v-scrollanimation><strong>
                 Sie suchen einen hochqualifizierten Pflegedienst in Ihrer Umgebung?
                 Dann sind sie bei uns genau richtig! Wir betreuen jede Art von Patienten,
                 ob einfacher Pflegefall oder Intensivfall,
@@ -15,40 +16,51 @@
                 24h zur verfügung. In den folgenden Bereichen sind wir Experten:
                 </strong>
             </p>
-                <li><span>Grundpflege</span></li>
-                <li><span>Intensivpflege</span></li>
-                <li><span>Serviceleistungen</span></li>
+            <div class="intro-list" v-scrollanimation>
+                <ul><li><span>Grundpflege</span></li></ul>
+                <ul><li><span>Intensivpflege</span></li></ul>
+                <ul><li><span>Serviceleistungen</span></li></ul>
+                </div>
+                </div>
             <br>
-            <p>
+            <div class="txt">
+            <p v-scrollanimation>
                 <strong>
                     Bei uns steht das Wolhbefinden der Patienten an erster Stelle. 
                     Wir wollen das Vertrauen unserer Patienten gewinnen, um all die 
                     Pflegenotwendingen Leistungen zusammen durchzuführen und der Patient sich 
                     während der gesamten Verpflegung wohl und sicher fühlt.
                 </strong>
-                <br>
-
             </p>
+            </div>
         </div>
         <br>
         <br>
-        <div class="grundpflege">
+        <div class="grundpflege" v-scrollanimation>
             <div><img src="../assets/grundpflegeIcon.png" alt=""></div>
-            <div><h2>Folgende pflegerische Leistungen zählen zur Grundpflege:</h2></div>
+            <div><h2>Grundpflege:</h2></div>
         </div>
         <br>
         <div class="grundpflege-text">
-            <p>
+            <div class="txt">
+            <p v-scrollanimation>
                 <strong>
-                    <li><span>Körperpflege</span></li>
-                    <li><span>Hilfe beim An - und Ausziehen</span></li>
-                    <li><span>Hilfe beim Essen und Trinken</span></li>
-                    <li><span>Bewegungshilfe</span></li>
-                    <li><span>Hauswirtschaftliche Aufgaben</span></li>
+                    Menschen, die körperlich und geistig nicht mehr so fit sind,
+                    können meistens alltägliche Tätigkeiten, wie z.B selbständig essen,
+                    das Klo aufsuchen und sich selbständig anziehen nicht mehr bewältigen.
+                    Folgende Leistungen zählen zu der Grundpflege:
+                    <br><br>
+                   <ul> <li><span>Körperpflege</span></li></ul>
+                   <ul> <li><span>Hilfe beim An - und Ausziehen</span></li></ul>
+                   <ul> <li><span>Hilfe beim Essen und Trinken</span></li> </ul>
+                   <ul> <li><span>Bewegungshilfe</span></li></ul>
+                   <ul><li><span>Hauswirtschaftliche Aufgaben</span></li></ul>
                 </strong>
             </p>
+            </div>
             <br>
-            <p>
+            <div class="txt">
+            <p v-scrollanimation>
                 <strong>
                     Natürlich fällt auch die <span>Vorsorge</span> in die Grundpflege.
                     Durch die <span>Vorsorge</span> werden Einschränkungen wie Erkältung,
@@ -57,39 +69,48 @@
                     unserer Patienten und beseitigen diese.
                 </strong>
             </p>
+            </div>
         </div>
         <br>
-        <div class="intensiv-pflege">
+        <div class="intensiv-pflege" v-scrollanimation>
             <div><img src="../assets/intensivIcon.png" alt=""></div>
             <div><h2>Intensivpflege:</h2></div>
         </div>
         <br>
         <div class="intensivpflege-text">
-            <p>
+            <div class="txt">
+            <p v-scrollanimation>
                 <strong>
                     Die Intensivpflege ist ein wesentlicher Bestandteil unserer Leistungen.
                     Ambulante Intensivpflege bezeichnet die Behandlung pflegebedürftiger Menschen
                     mit lebensbedrohlicher Erkrankungen außerhalb der Klinik.
                     Sie tritt in kraft, wenn eine stationäre klinische Behandlung und 
-                    medizinischer Versorgung nicht mehr erforderlich ist. Folgende Leistungen
-                    bieten wir für die Intensivpflege an:
+                    medizinischer Versorgung nicht mehr erforderlich ist. 
                 </strong>
             </p>
+            </div>
+           
             <br>
-            <p>
+            <div class="txt">
+            <p v-scrollanimation>
                 <strong>
-                    <li><span>Überwachung & Vitalisierung</span></li>
-                    <li><span>Lagerungsbehandlungen & Mobilisation</span></li>
+                    Folgende Leistungen
+                    bieten wir für die Intensivpflege an: <br>
+                    <div class="intensiv-list">
+                    <ul><li><span>Überwachung & Vitalisierung</span></li></ul>
+                    <ul><li><span>Lagerungsbehandlungen & Mobilisation</span></li></ul>
+                    </div>
                 </strong>
             </p>
+            </div>
         </div>
         <br>
-        <div class="service-leistungen">
+        <div class="service-leistungen" v-scrollanimation>
             <div><img src="../assets/serviceIcon.png" alt=""></div>
             <div><h2>Folgende Serviceleistungen stehen Ihnen zur Auswahl:</h2></div>
         </div>
         <div class="service-text">
-            <p>
+            <p v-scrollanimation>
                 <strong>
                     Zu unseren Servieleistungen gehört unter anderem die <span> häusliche
                     Krankenpflege nach §37 SGB V  </span> als Leistung der gesetzlichen Krankenversicherung,
@@ -115,14 +136,7 @@ export default {
 
 <style scoped>
 /*Slide animation*/
-@keyframes slide{
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
+
 
 #startseite{
     /*calling slide animation for this section*/
@@ -138,18 +152,30 @@ export default {
 }
 /*Paragraph text*/
 .intro-text{
+    display:flex;
     font-family: verdana;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     outline-color: initial;
     color: grey;
     text-align: left;
     margin-top: 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    line-height: 25px;
     
 }
+.intro-list{
+    margin-top: 2em;
+}
+.txt{
+    width: 40em;
+}
+
 .grundpflege{
     display: flex;
     color: rgb(70,130,180);
+   
     
 }
 img{
@@ -158,10 +184,14 @@ img{
 }
 
 .grundpflege-text{
+    display:flex;
+    flex-wrap: wrap;
     font-family: verdana;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     color:grey;
+    line-height: 25px;
+    justify-content: space-between;
 
 }
 
@@ -171,12 +201,23 @@ span{
 .intensiv-pflege{
     display:flex;
     color: rgb(70,130,180);
+    margin-top: 2em;
+    
 }
 .intensivpflege-text{
+    display:flex;
+    flex-wrap: wrap;
     font-family: verdana;
-    font-weight: 500;
-    font-size: 16px;
-    color:grey;
+    font-weight: 600;
+    font-size: 14px;
+    outline-color: initial;
+    color: grey;
+    justify-content: space-between;
+    line-height: 25px;
+    padding: 10px;
+}
+.intensiv-list{
+    margin-top: 2em;
 }
 
 .service-leistungen{
@@ -186,7 +227,7 @@ span{
 .service-text{
     font-family: verdana;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     color:grey;
 }
 

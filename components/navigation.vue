@@ -15,7 +15,7 @@
         <div class="nav-list">
           <a href="#" v-on:click="comp = 'start'" >Startseite</a>
           <a href="#" v-on:click="comp= 'pflege'">Pflegedienst</a>
-          <a href="#" v-on:click="comp = 'kontakt'">Kontakt</a>
+          <a href="#" v-on:click="comp='kon'">Kontakt</a>
           <a href="#" v-on:click="comp = 'impr'">Impressum</a>
         </div>
       </nav>
@@ -31,6 +31,7 @@ import startseite from "./startseite.vue";
 import impressum from "./impressum.vue";
 import kontakt from "./kontakt.vue";
 
+
 //import Vue from'vue';
 
 //define export object for navigation menue
@@ -40,7 +41,7 @@ export default {
     pflege: pflegedienst,
     start: startseite,
     impr: impressum,
-    kontakt,
+    kon: kontakt,
   },
 
   name: "header",
@@ -56,6 +57,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style scoped>
@@ -76,6 +78,8 @@ export default {
   margin-left: 0px;
   margin-top: 0px;
   margin-right: 0px;
+  flex-wrap: wrap;
+  
 }
 
 .phone-number {

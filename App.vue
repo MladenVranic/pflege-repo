@@ -5,8 +5,8 @@
     <navigation/>
     <footerPflege/>
 
-    <div class="backToTop-btn">
-      <a href="#" class="backBTN" id="backToTop"></a>
+    <div class="backToTop-btn" >
+      <a href="#" id="backToTop" class="backBTN" v-scrollanimation></a>
     </div>
 
 
@@ -23,7 +23,9 @@ import footerPflege from './components/footerPflege.vue';
 
 
 
+
 export default {
+  name: 'App',
    //call components
   components:{
     navigation,
@@ -31,19 +33,13 @@ export default {
     //startseite,
     //pflegedienst,
   },
-
- name: 'App',
-  
   data(){
     return{
-      
-          };
-        },
-        methods:{
-          
-        }
-      }
 
+    }
+  }
+}
+   
 </script>
 
 <style>
@@ -64,6 +60,7 @@ body{
   color: #2c3e50;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 .backBTN{
   display: inline;
@@ -82,7 +79,14 @@ body{
   background-position: center;
   background-size: 50%;
   transform: rotate(-90deg);
-  visibility: hidden;
-  
+  transition: 0.3s all ease-out;
+  opacity: 0;
+}
+.before-enter{
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+.enter{
+  opacity: 1;
 }
 </style>

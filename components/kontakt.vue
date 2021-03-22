@@ -13,12 +13,13 @@
                 </strong>
             </p>
         </div>
+        <div class="form">
         <div class="kontakt-form">
-            <div><h3>Kontaktinofrmationen:</h3></div>
+            <div><h3>Geschäftsführung:</h3></div>
 
             <div class="kontakt-info">
                 <strong>Sirius Pflegedienst GmbH <br>
-                Geschäftsführer: <span> Zorica Stankovic </span><br>
+                Geschäftsführer: <span> Dalibor Stankovic </span><br>
                 Schleussnerstr. 90 <br>
                 63263 Neu Isenburg</strong>
                 <br>
@@ -31,6 +32,24 @@
             </div>
         </div>
 
+        <div class="kontakt-form-pdl">
+            <div><h3>Pflegedienst Leitung:</h3></div>
+
+            <div class="kontakt-info-pdl">
+                <strong>Sladjana Milakovic <br>
+                Schleussnerstr. 90 <br>
+                63263 Neu Isenburg</strong>
+                <br>
+                <br>
+                <strong>
+                    Telefon: <span>06102-815-3335</span><br> 
+                    Fax: <span>06102-815-3336</span><br>
+                    E-Mail: <span>########</span><br>
+                </strong>
+            </div>
+        </div>
+
+</div>
     </div>
 </template>
 
@@ -40,7 +59,7 @@ export default {
     data(){
         return{
             user: {
-
+                
             }
         }
     }
@@ -59,7 +78,6 @@ export default {
 #kontakt{
     /*calling slide animation for this section*/
     animation: 1s ease-out 0s 1 slide;
-    height: 50em;
     margin-left:  10%;
     margin-right: 10%;
     margin-top: 13%;
@@ -74,11 +92,17 @@ export default {
     font-size: 16px;
     color: grey;
 }
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
 .kontakt-form{
-    margin-left: 25%;
+
     margin-top: 12%;
-    height: 30em;
-    width: 30em;
+    height: 20em;
+    width: 25em;
     border: 1px solid grey;
     box-shadow: 10px 5px 5px grey;
 }
@@ -95,6 +119,26 @@ export default {
 }
 span{
     color: rgb(70,130,180);
+}
+
+.kontakt-form-pdl{
+
+    margin-top: 12%;
+    height: 20em;
+    width: 25em;
+    border: 1px solid grey;
+    box-shadow: 10px 5px 5px grey;
+}
+.kontakt-form-pdl h3{
+    text-align: center;
+    color: rgb(70,130,180);
+}
+.kontakt-info-pdl{
+    font-family: verdana;
+    font-weight: 15px;
+    margin-left: 3%;
+    margin-top: 10%;
+    color: grey;
 }
 
 </style>
