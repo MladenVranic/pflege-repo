@@ -1,13 +1,59 @@
 <template>
     <div id="startseite">
 
-        <div class="titel" v-scrollanimation>
-        <h1>Sirius Pflegedienst - Ihr Pflegedienst in Frankfurt und Umgebung</h1>
+        <div>
+            <!--Startseite Anzeigebild-->
+            <div class="intro-img">
+            <img src="../assets/cargiver_3.png" alt="" >
+            </div>
+            <!--Form im Anzeigebild-->
+            <div class="intro-form" >
+                <!--Überschrift-->
+                <div class="titel">
+                    <h2 v-scrollanimation>. . . Ihr Pflegedienst in Frankfurt und Umgebung</h2>
+                </div>
+                <!--Text & Icons in der Form-->
+                    <div class="form-text" v-scrollanimation>
+                        <div><img src="../assets/starIcon.png" alt="" class="icon"></div>
+                            <div>
+                                <p>
+                                    <strong>
+                                        langjährige Erfahrung
+                                    </strong>
+                                </p>
+                            </div>
+
+                    <div class="form-text-2">
+                        <div> <img src="../assets/starIcon.png" alt="" class="icon"></div>
+                            <div>
+                                <p>
+                                    <strong>
+                                        24h verfügbar
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-text-3">
+                            <div>
+                                <p>
+                                    <strong>
+                                        sirius.pd@outlook.de
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
         </div>
+
+<div class="inhalt">
+    <div class="titel" v-scrollanimation>
+        <h1>Sirius Pflegedienst - Ihr Pflegedienst in Frankfurt und Umgebung</h1>
+    </div>
 
         <div class="intro-text">
             <div class="txt">
-            <p v-scrollanimation><strong>
+                <p v-scrollanimation><strong>
                 Sie suchen einen hochqualifizierten Pflegedienst in Ihrer Umgebung?
                 Dann sind sie bei uns genau richtig! Wir betreuen jede Art von Patienten,
                 ob einfacher Pflegefall oder Intensivfall,
@@ -15,48 +61,48 @@
                 Außerdem stehen wir Ihnen auch außerhalb der Öffnungszeiten bei Notfällen
                 24h zur verfügung. In den folgenden Bereichen sind wir Experten:
                 </strong>
-            </p>
-            <div class="intro-list" v-scrollanimation>
-                <ul><li><span>Grundpflege</span></li></ul>
-                <ul><li><span>Intensivpflege</span></li></ul>
-                <ul><li><span>Serviceleistungen</span></li></ul>
+                </p>
+                    <div class="intro-list" v-scrollanimation>
+                        <ul><li><span>Grundpflege</span></li></ul>
+                        <ul><li><span>Intensivpflege</span></li></ul>
+                        <ul><li><span>Serviceleistungen</span></li></ul>
+                    </div>
                 </div>
+                <br>
+                <div class="txt">
+                    <p v-scrollanimation>
+                        <strong>
+                            Bei uns steht das Wolhbefinden der Patienten an erster Stelle. 
+                            Wir wollen das Vertrauen unserer Patienten gewinnen, um all die 
+                            Pflegenotwendingen Leistungen zusammen durchzuführen und der Patient sich 
+                            während der gesamten Verpflegung wohl und sicher fühlt.
+                        </strong>
+                    </p>
                 </div>
-            <br>
-            <div class="txt">
-            <p v-scrollanimation>
-                <strong>
-                    Bei uns steht das Wolhbefinden der Patienten an erster Stelle. 
-                    Wir wollen das Vertrauen unserer Patienten gewinnen, um all die 
-                    Pflegenotwendingen Leistungen zusammen durchzuführen und der Patient sich 
-                    während der gesamten Verpflegung wohl und sicher fühlt.
-                </strong>
-            </p>
             </div>
-        </div>
         <br>
         <br>
-        <div class="grundpflege" v-scrollanimation>
-            <div><img src="../assets/grundpflegeIcon.png" alt=""></div>
-            <div><h2>Grundpflege:</h2></div>
-        </div>
+            <div class="grundpflege" v-scrollanimation>
+                <div><img src="../assets/grundpflegeIcon.png" alt=""></div>
+                <div><h2>Grundpflege:</h2></div>
+            </div>
         <br>
-        <div class="grundpflege-text">
-            <div class="txt">
-            <p v-scrollanimation>
-                <strong>
-                    Menschen, die körperlich und geistig nicht mehr so fit sind,
-                    können meistens alltägliche Tätigkeiten, wie z.B selbständig essen,
-                    das Klo aufsuchen und sich selbständig anziehen nicht mehr bewältigen.
-                    Folgende Leistungen zählen zu der Grundpflege:
-                    <br><br>
-                   <ul> <li><span>Körperpflege</span></li></ul>
-                   <ul> <li><span>Hilfe beim An - und Ausziehen</span></li></ul>
-                   <ul> <li><span>Hilfe beim Essen und Trinken</span></li> </ul>
-                   <ul> <li><span>Bewegungshilfe</span></li></ul>
-                   <ul><li><span>Hauswirtschaftliche Aufgaben</span></li></ul>
-                </strong>
-            </p>
+            <div class="grundpflege-text">
+                <div class="txt">
+                    <p v-scrollanimation>
+                    <strong>
+                        Menschen, die körperlich und geistig nicht mehr so fit sind,
+                        können meistens alltägliche Tätigkeiten, wie z.B selbständig essen,
+                        das Klo aufsuchen und sich selbständig anziehen nicht mehr bewältigen.
+                        Folgende Leistungen zählen zu der Grundpflege:
+                        <br><br>
+                            <ul> <li><span>Körperpflege</span></li></ul>
+                            <ul> <li><span>Hilfe beim An - und Ausziehen</span></li></ul>
+                            <ul> <li><span>Hilfe beim Essen und Trinken</span></li> </ul>
+                            <ul> <li><span>Bewegungshilfe</span></li></ul>
+                            <ul><li><span>Hauswirtschaftliche Aufgaben</span></li></ul>
+                    </strong>
+                </p>
             </div>
             <br>
             <div class="txt">
@@ -107,7 +153,7 @@
         <br>
         <div class="service-leistungen" v-scrollanimation>
             <div><img src="../assets/serviceIcon.png" alt=""></div>
-            <div><h2>Folgende Serviceleistungen stehen Ihnen zur Auswahl:</h2></div>
+            <div><h2>Serviceleistungen:</h2></div>
         </div>
         <div class="service-text">
             <p v-scrollanimation>
@@ -119,6 +165,7 @@
             </p>
         </div>
     </div>
+</div>
 </template>
 
 <script>
@@ -136,15 +183,78 @@ export default {
 
 <style scoped>
 /*Slide animation*/
-
+ @media screen and (min-width: 400px) {
+        .intro-img{
+            display: none;
+        }
+    }
 
 #startseite{
     /*calling slide animation for this section*/
     animation: 1s ease-out 0s 1 slide;
-    margin-left: 10%;
-    margin-top: 13%;
-    margin-right: 10%;
     margin-bottom: 10%;
+}
+.intro-form{
+    font-family: verdana;
+    color: rgb(70,130,180);
+    width: 30em;
+    height: 25em;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10em;
+    left: 45em;
+    right: 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.678);
+    text-align: center;  
+}
+.form-text{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    margin-left: 2em;
+    padding: 3px;
+    font-size: 18px;
+    font-family: verdana;
+    width: 20em;
+}
+.form-text-2{
+    display:flex;
+    font-size: 18px;
+    font-family: verdana;
+}
+.form-text-3{
+    margin-left: 3.5em;
+    margin-top: 3em;
+    width: 90%;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid black;
+    background: rgb(70,130,180);
+    color: white;
+    text-align: center;
+    padding-bottom:8px;
+}
+
+
+.intro-img{
+    position: relative;
+    display:inline-block;
+    width: 100%;
+}
+
+.intro-img img{
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 8%;
+    height: 42em;
+    width: 99.5%;
+    
+}
+.inhalt{
+   margin-right: 10%;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 /*Überschrift*/
 .titel{
@@ -230,6 +340,5 @@ span{
     font-size: 14px;
     color:grey;
 }
-
 
 </style>
